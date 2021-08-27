@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ERNiftyExtensions'
-  s.version          = '3.6.1'
+  s.version          = '3.6.2'
   s.summary          = 'A library of helpful extensions for UIKit & Foundation that one iOS developer has picked up over the years.'
 
 # This description is used to generate tags and improve search results.
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
       
       foundation.source_files = 'ERNiftyExtensions/Classes/Foundation/*.{swift}'
       
-      foundation.dependency 'CryptoSwift', '~> 0.9.0'
+      foundation.dependency 'CryptoSwift', '~> 1.4.1'
       
       foundation.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
 
