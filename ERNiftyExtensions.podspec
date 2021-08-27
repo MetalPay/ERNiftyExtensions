@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   #   'ERNiftyExtensions' => ['ERNiftyExtensions/Assets/*.png']
   # }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
   
   s.swift_version = '5.0'
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
       
       # Subspect for users that only with to have Foundation and Swift standard library extensions.
       
-      foundation.ios.deployment_target = '10.0'
+      foundation.ios.deployment_target = '13.0'
       
       #foundation.watchos.deployment_target = '4.0'
       
@@ -56,20 +56,20 @@ Pod::Spec.new do |s|
   
   s.subspec 'CoreAnimation' do |ca|
       
-      ca.ios.deployment_target = '10.0'
+      ca.ios.deployment_target = '13.0'
       ca.source_files = 'ERNiftyExtensions/Classes/CoreAnimation/*.{swift}'
   end
   
   s.subspec 'CoreLocation' do |cl|
       
-      cl.ios.deployment_target = '10.0'
+      cl.ios.deployment_target = '13.0'
       cl.source_files = 'ERNiftyExtensions/Classes/CoreLocation/*.{swift}'
       cl.frameworks = 'CoreLocation'
   end
   
   s.subspec 'UIKit' do |ui|
       
-      ui.ios.deployment_target = '10.0'
+      ui.ios.deployment_target = '13.0'
       ui.source_files = 'ERNiftyExtensions/Classes/UIKit/*.{swift}'
       ui.dependency 'ERNiftyExtensions/Foundation'
       ui.dependency 'ERNiftyExtensions/CoreAnimation'
